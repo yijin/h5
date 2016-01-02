@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12306", "12306\12306.csproj", "{CEE973D5-3804-40BF-89DC-F3E48DA3FFFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Com.Guiyu.Admin", "Com.Guiyu.Admin\Com.Guiyu.Admin.csproj", "{3ADFD2FD-D18B-4DC8-A191-FD3D4AFC0451}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Com.Guiyu.BLL", "Com.Guiyu.BLL\Com.Guiyu.BLL.csproj", "{C27BB8CC-0CAA-4FF4-A614-225362872F34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Com.Guiyu.DAL", "Com.Guiyu.DAL\Com.Guiyu.DAL.csproj", "{572523DF-8BC4-424F-AE97-A88E0EA4B4C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Com.Guiyu.Models", "Com.Guiyu.Models\Com.Guiyu.Models.csproj", "{1581676E-0852-47BE-95C7-9D420B864DA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Com.Guiyu.Redis", "Com.Guiyu.Redis\Com.Guiyu.Redis.csproj", "{BFB48183-DA95-44B8-92DF-341A50D04BF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Com.Guiyu.Utils", "Com.Guiyu.Utils\Com.Guiyu.Utils.csproj", "{C5AA6155-C875-4827-B093-A971F50A940B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "H5", "H5", "{414E9B3A-2EDB-432B-A549-6ACEC09ABBA5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CEE973D5-3804-40BF-89DC-F3E48DA3FFFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEE973D5-3804-40BF-89DC-F3E48DA3FFFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEE973D5-3804-40BF-89DC-F3E48DA3FFFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEE973D5-3804-40BF-89DC-F3E48DA3FFFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3ADFD2FD-D18B-4DC8-A191-FD3D4AFC0451}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ADFD2FD-D18B-4DC8-A191-FD3D4AFC0451}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ADFD2FD-D18B-4DC8-A191-FD3D4AFC0451}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ADFD2FD-D18B-4DC8-A191-FD3D4AFC0451}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C27BB8CC-0CAA-4FF4-A614-225362872F34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C27BB8CC-0CAA-4FF4-A614-225362872F34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C27BB8CC-0CAA-4FF4-A614-225362872F34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C27BB8CC-0CAA-4FF4-A614-225362872F34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{572523DF-8BC4-424F-AE97-A88E0EA4B4C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{572523DF-8BC4-424F-AE97-A88E0EA4B4C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{572523DF-8BC4-424F-AE97-A88E0EA4B4C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{572523DF-8BC4-424F-AE97-A88E0EA4B4C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1581676E-0852-47BE-95C7-9D420B864DA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1581676E-0852-47BE-95C7-9D420B864DA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1581676E-0852-47BE-95C7-9D420B864DA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1581676E-0852-47BE-95C7-9D420B864DA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFB48183-DA95-44B8-92DF-341A50D04BF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFB48183-DA95-44B8-92DF-341A50D04BF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFB48183-DA95-44B8-92DF-341A50D04BF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFB48183-DA95-44B8-92DF-341A50D04BF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5AA6155-C875-4827-B093-A971F50A940B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5AA6155-C875-4827-B093-A971F50A940B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5AA6155-C875-4827-B093-A971F50A940B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5AA6155-C875-4827-B093-A971F50A940B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CEE973D5-3804-40BF-89DC-F3E48DA3FFFC} = {414E9B3A-2EDB-432B-A549-6ACEC09ABBA5}
+	EndGlobalSection
+EndGlobal

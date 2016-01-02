@@ -1,0 +1,5 @@
+D:\project\H5\Com.Guiyu.Redis\bin\Debug\Com.Guiyu.Redis.dll
+D:\project\H5\Com.Guiyu.Redis\bin\Debug\Com.Guiyu.Redis.pdb
+D:\project\H5\Com.Guiyu.Redis\obj\Debug\Com.Guiyu.Redis.csprojResolveAssemblyReference.cache
+D:\project\H5\Com.Guiyu.Redis\obj\Debug\Com.Guiyu.Redis.dll
+D:\project\H5\Com.Guiyu.Redis\obj\Debug\Com.Guiyu.Redis.pdb

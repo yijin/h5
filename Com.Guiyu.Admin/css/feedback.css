@@ -1,0 +1,49 @@
+﻿body {
+}
+
+.button
+{
+	background:#eee url('../images/bt_bgline.gif') repeat-x 50% top;  
+	display: inline-block;
+	line-height: 19px;
+	border:1px solid #bf0060;
+	padding: 0 8px;
+	color: #ff8040;
+	cursor:pointer;
+}
+.button:hover
+{
+    color: #842b00;
+    border:1px solid #642100;
+}
+.td_one
+{
+    background:#ffbd9d;
+    font-weight:bold;
+    text-align:right;
+    width:120px;
+    height:50px;
+}
+.td_two
+{
+    text-align:center;
+    width:350px;
+    height:20px;        
+}
+.td_three
+{
+    text-align:center;
+    width:350px;
+    height:100px;
+}
+.tables
+{
+    border-width:1px;
+    border-style:solid;
+    border-color:#ff5809;
+}
+.td_four
+{
+    text-align:center;
+    height:40px;
+}

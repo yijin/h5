@@ -1,0 +1,143 @@
+﻿@using Com.Guiyu.Models._12306;
+@model PINTopic
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>
+        添加主题
+    </title>
+    <link rel="stylesheet" type="text/css" href="/css/CMS/admin.css" />
+    <link rel="stylesheet" type="text/css" href="/css/CMS/icon.css" />
+    <link href="/css/lib/datapicker.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/js/CMS/jquery-1.6.min.js"></script>
+    <script type="text/javascript" src="/js/CMS/jquery.easyui.min.js"></script>
+    <script src="/js/lib/ui.datapicker.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="/ueditor/ueditor.config.js"></script>
+    <!-- 编辑器源码文件 -->
+    <script type="text/javascript" src="/ueditor/ueditor.all.js?v=2"></script>
+    <script language="javascript" type="text/javascript">
+
+        $(function () {
+            $("#txtStartTime").datepicker({
+                changeYear: true
+            });
+            $("[data-type=\"readonly\"]").focus(function () {
+                this.blur();
+            });
+        });
+
+
+        function ShowImg(txtid) {
+
+
+            var url = "/upload/image?url=Pin/cover&textid=" + txtid;
+            var str = "<iframe  frameborder='0' src='" + url + "' style='width:100%;height:100%'></iframe>";
+            $("#Img").children().children().empty();
+
+            $("#Img").children().children().append(str);
+
+            $("#Img").dialog("open");
+
+
+        }
+
+        function closeImg(text, textid) {
+
+            $("#Img").dialog("close");
+            if (text != "") {
+                $("#" + textid).val(text);
+
+            }
+
+        }
+
+        function clearText(obj) {
+            obj.parent().find("input[type=text]").val("");
+            obj.parent().find("input[type=hidden]").val("");
+        }
+       
+
+    </script>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+        <input value="@Model.Id" name="Id" type="hidden" />
+        <div class="panel-header">
+            <div class="panel-title">
+                <span id="Label1">添加主题</span>
+            </div>
+        </div>
+        <div style="height: 430px; border-bottom: 1px solid #CCCCCC" class="overlfow">
+            <table class="detail">
+
+               
+                <tr>
+                    <th>名字</th>
+                    <td colspan="3">
+                        <input name="Name" value="@Model.Name" type="text" id="txtTitle" />
+                    </td>
+                    
+                </tr>
+
+                <tr>
+                    <th>描述</th>
+                    <td colspan="3">
+                        <input name="Des" value="@Model.Des" type="text" id="txtTitle" />
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <th>用户挑战成功结果</th>
+                    <td colspan="3">
+                        <input name="SuccessDes" value="@Model.SuccessDes" type="text" id="txtTitle" />
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <th>用户挑战失败结果</th>
+                    <td colspan="3">
+                        <input name="FailDes" value="@Model.FailDes" type="text" id="txtTitle" />
+                    </td>
+
+                </tr>
+               
+
+              
+                <tr>
+                    <th>时间</th>
+                    <td colspan="3">
+                        <input name="Time" value="@Model.Time.ToString("yyyy-MM-dd")" type="text" id="txtStartTime" style="width:80px;" />小时：<input name="StartTimeHour" value="@Model.Time.Hour" type="text" id="StartTimeHour" style="width:50px;" />分钟：<input name="StartTimeMinute" type="text" id="StartTimeMinute" value="@Model.Time.Minute" style="width:50px;" />
+                    </td>
+                   
+                </tr>
+               
+            </table>
+        </div>
+        <div class="btn-layout">
+
+            <input type="submit" class="easyui-linkbutton" value="提交" />
+            <a href="#" class="easyui-linkbutton" iconcls="icon-cancel" onclick="parent.close1(false)">取消</a>
+        </div>
+
+        <div id="Img" title="选择图片" icon="icon-save" class="easyui-dialog" closed="true" modal="true" style="width: 700px; height: 450px"></div>
+        <div id="User" title="选择用户" icon="icon-save" class="easyui-dialog" closed="true" modal="true" style="width: 700px; height: 450px">
+        </div>
+    }
+</body>
+</html>
+
+<script type="text/javascript">
+    UE.getEditor('txtContent');
+
+</script>

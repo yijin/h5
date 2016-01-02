@@ -1,0 +1,10 @@
+D:\project\H5\Com.Guiyu.Models\obj\Debug\Com.Guiyu.Models.csprojResolveAssemblyReference.cache
+D:\project\H5\Com.Guiyu.Models\bin\Debug\Com.Guiyu.Models.dll
+D:\project\H5\Com.Guiyu.Models\bin\Debug\Com.Guiyu.Models.pdb
+D:\project\H5\Com.Guiyu.Models\bin\Debug\Com.Guiyu.Utils.dll
+D:\project\H5\Com.Guiyu.Models\bin\Debug\Newtonsoft.Json.dll
+D:\project\H5\Com.Guiyu.Models\bin\Debug\System.Net.Http.Formatting.dll
+D:\project\H5\Com.Guiyu.Models\bin\Debug\Com.Guiyu.Utils.pdb
+D:\project\H5\Com.Guiyu.Models\bin\Debug\System.Net.Http.Formatting.xml
+D:\project\H5\Com.Guiyu.Models\obj\Debug\Com.Guiyu.Models.dll
+D:\project\H5\Com.Guiyu.Models\obj\Debug\Com.Guiyu.Models.pdb

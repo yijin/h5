@@ -1,0 +1,122 @@
+﻿@using Com.Guiyu.Models._12306;
+@model List<PINCode>
+@{
+    int index = 0;
+    Layout = null;
+}
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head2">
+    <title>
+        验证码主题
+    </title>
+    <link rel="stylesheet" type="text/css" href="/css/CMS/admin.css" />
+    <link rel="stylesheet" type="text/css" href="/css/CMS/icon.css" />
+    <link href="/css/lib/datapicker.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/js/CMS/jquery-1.6.min.js"></script>
+    <script type="text/javascript" src="/js/CMS/jquery.easyui.min.js"></script>
+    <script src="/js/lib/ui.datapicker.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/ueditor/ueditor.config.js"></script>
+    <!-- 编辑器源码文件 -->
+    <script type="text/javascript" src="/ueditor/ueditor.all.js?v=2"></script>
+    <script type="text/javascript" language="javascript">
+
+        function open1(id) {
+            var url = "/Pin/CodeAdd?topicId=@(ViewBag.TopicId)&id=" + id;
+            var str = "<iframe  frameborder='0' src='" + url + "' style='width:100%;height:100%'></iframe>";
+            $("#add").children().children().empty();
+            $("#add").children().children().append(str);
+            $("#add").dialog("open");
+        }
+
+        function close1(refresh) {
+            $("#add").dialog("close");
+            location.reload();
+        }
+        $(function () {
+            $("#txtStartTime,#txtEndTime").datepicker({
+                changeYear: true
+            });
+        });
+
+
+    </script>
+</head>
+<body>
+    <form>
+
+
+
+        <div class="panel-header">
+            <div class="panel-title">
+                <span id="Label1">@(ViewBag.TopicName)的验证码列表</span>
+            </div>
+        </div>
+        <div class="panel-body">
+            <div class="panel-toolbar">
+                <div style="float:left">
+                    <a href="javascript:void(0)" style="" onclick="open1('')" class="easyui-linkbutton" plain="true" iconcls="icon-add">新建</a>
+                    <a id="lbtnRefresh" class="easyui-linkbutton" plain="true" iconcls="icon-reload" href="javascript:location.reload()">刷新</a>
+                </div>
+                <div style="float:right">
+
+                </div>
+                <div style="clear:both"></div>
+            </div>
+
+            <table>
+                <tr class="datagrid-header">
+                    <td style="width:25px">序号</td>
+                    <td>名称</td>
+                    <td>答案</td>
+                    <td>图片</td>
+
+
+                    <td style="width:160px">操作</td>
+                </tr>
+                @if (Model != null)
+                {
+                    foreach (PINCode item in Model)
+                    {
+                        index++;
+                        <tr class="datagrid-body" style="background-color:#efefef;">
+                            <td style="text-align:center">@index</td>
+
+
+
+                            <td style="text-align:center">
+                                @item.Des
+
+                            </td>
+                            <td style="text-align:center">
+                                @item.Answer
+
+                            </td>
+
+                            <td style="text-align:center">
+                                <img src="@item.ImgUrl" />        
+
+                            </td>
+                            
+                            <td style="text-align:center">
+   
+                                <a href="#" onclick=open1('@(item.Id)'); class="easyui-linkbutton" plain="true" iconcls="icon-edit">编辑</a> <br />
+                                <a href="/pin/codedelete?topicId=@(item.TopicId)&id=@(item.Id)">删除</a>
+
+                            </td>
+
+                        </tr>
+
+                    }
+                }
+
+            </table>
+
+
+        </div>
+
+        <div id="add" title="编辑" icon="icon-save" class="easyui-dialog" closed="true" modal="true" style="width:900px;height:500px"></div>
+    </form>
+</body>
+</html>

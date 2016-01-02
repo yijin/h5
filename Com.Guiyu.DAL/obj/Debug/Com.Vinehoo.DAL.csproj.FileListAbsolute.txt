@@ -1,0 +1,12 @@
+G:\project\Postcard\com.vinehoo.dal\obj\Debug\Com.Vinehoo.DAL.csprojResolveAssemblyReference.cache
+G:\project\Postcard\com.vinehoo.dal\bin\Debug\Com.Vinehoo.DAL.dll.config
+G:\project\Postcard\com.vinehoo.dal\bin\Debug\Com.Vinehoo.DAL.dll
+G:\project\Postcard\com.vinehoo.dal\bin\Debug\Com.Vinehoo.DAL.pdb
+G:\project\Postcard\com.vinehoo.dal\bin\Debug\Com.Vinehoo.Models.dll
+G:\project\Postcard\com.vinehoo.dal\bin\Debug\EntityFramework.dll
+G:\project\Postcard\com.vinehoo.dal\bin\Debug\EntityFramework.SqlServer.dll
+G:\project\Postcard\com.vinehoo.dal\bin\Debug\Com.Vinehoo.Models.pdb
+G:\project\Postcard\com.vinehoo.dal\bin\Debug\EntityFramework.xml
+G:\project\Postcard\com.vinehoo.dal\bin\Debug\EntityFramework.SqlServer.xml
+G:\project\Postcard\com.vinehoo.dal\obj\Debug\Com.Vinehoo.DAL.dll
+G:\project\Postcard\com.vinehoo.dal\obj\Debug\Com.Vinehoo.DAL.pdb
